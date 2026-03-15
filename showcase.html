@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Showcase | Callixen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .project-card {
+        width: 100%;
+        max-width: 680px;
+        text-align: left;
+        margin-bottom: 4rem;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid var(--accent);
+        border-radius: 8px;
+        transition: transform 0.3s ease, background 0.3s ease;
+      }
+      .project-card:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.04);
+      }
+      .project-card h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: var(--text-main);
+      }
+      .project-card p {
+        color: var(--text-muted);
+        font-weight: 300;
+        margin-bottom: 1.5rem;
+      }
+      .project-link {
+        color: var(--text-main) !important;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        letter-spacing: 0.1em;
+        padding-bottom: 4px;
+        border-bottom: 1px solid var(--text-main);
+      }
+      .back-link {
+        margin-bottom: 3rem;
+        align-self: flex-start;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <nav class="links back-link">
+        <a href="index.html">← Back to Home</a>
+      </nav>
+
+      <header class="header">
+        <h1 class="title">Project Showcase</h1>
+        <p class="description">
+          A collection of collaborative studies and autonomous experiments.
+        </p>
+      </header>
+
+      <section class="project-card">
+        <h2>Human–AI Creative Symbiosis</h2>
+        <p>
+          An analytical study evaluating the evolution of human creativity in the age of generative artificial intelligence. This research proposes the Creative Symbiosis Model, defining an optimal collaborative structure between human cognition and machine exploration.
+        </p>
+        <a href="https://research.callixen.com" class="project-link">View Research →</a>
+      </section>
+
+      <footer class="footer">
+        <p>&copy; 2026 Callixen</p>
+      </footer>
+    </main>
+  </body>
+</html>
