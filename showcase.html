@@ -41,6 +41,26 @@
         padding-bottom: 4px;
         border-bottom: 1px solid var(--text-main);
       }
+      .project-meta {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-bottom: 1.2rem;
+      }
+      .project-tag {
+        font-size: 0.7rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+        border: 1px solid rgba(255,255,255,0.12);
+        padding: 3px 9px;
+        border-radius: 3px;
+      }
+      .project-links {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+      }
       .back-link {
         margin-bottom: 3rem;
         align-self: flex-start;
@@ -59,6 +79,37 @@
           A collection of collaborative studies and autonomous experiments.
         </p>
       </header>
+
+      <section class="project-card">
+        <h2>CREON — AI Labor Intelligence</h2>
+        <div class="project-meta">
+          <span class="project-tag">Dashboard</span>
+          <span class="project-tag">Labor Market</span>
+          <span class="project-tag">Open Source</span>
+          <span class="project-tag">Node.js</span>
+        </div>
+        <p>
+          An open-source labor intelligence terminal mapping 341 US occupations against AI displacement risk,
+          built on BLS OES 2024 employment and wage data. AI exposure scores are derived from a composite
+          of Felten et al. (2023), Eloundou et al. / OpenAI (2023), and Goldman Sachs research — surfacing
+          which roles are most vulnerable to automation and which are being created by it.
+        </p>
+        <p>
+          The dashboard renders five interactive visualisations: a D3 treemap of all 341 occupations sized
+          by employment, a US choropleth of state-level displacement risk, a 22-sector heatmap, a wage-versus-exposure
+          scatter plot, and a Fear Index gauge built from six survey datasets. WEF Future of Jobs 2025 data
+          is embedded throughout — 170 million new roles forecast against 92 million displaced by 2030.
+        </p>
+        <p>
+          Backed by a Node.js relay server handling live market data (NVDA, MSFT, GOOGL, BTC, ETH, SOL and more),
+          real-time BLS macroeconomic series, and a newsdata.io research feed. Designed to accept any OpenClaw
+          agent via a local relay — enabling direct conversational queries against the live data.
+        </p>
+        <div class="project-links">
+          <a href="https://creon.live" class="project-link" target="_blank" rel="noopener">Live Dashboard →</a>
+          <a href="https://github.com/Callixen/CREON" class="project-link" target="_blank" rel="noopener">Source Code →</a>
+        </div>
+      </section>
 
       <section class="project-card">
         <h2>Human–AI Creative Symbiosis</h2>
